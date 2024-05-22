@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alert Dialogue Application "
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name "
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@id/tvapp"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@id/tvapp"
+        app:layout_constraintTop_toBottomOf="@id/tvapp"
+        app:layout_constraintVertical_bias="0.2"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/tvaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cell Number  "
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@id/tvname"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@id/tvname"
+        app:layout_constraintTop_toBottomOf="@id/tvname"
+        app:layout_constraintVertical_bias="0.2"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/tvbalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Account Balance "
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@id/tvaccount"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@id/tvaccount"
+        app:layout_constraintTop_toBottomOf="@id/tvaccount" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="450dp"
+        android:text="Log in"
+        app:layout_constraintTop_toBottomOf="@id/tvbalance"
+        app:layout_constraintStart_toStartOf="@id/tvbalance"
+        app:layout_constraintEnd_toEndOf="@id/tvbalance"
+        android:layout_marginTop="50dp"
+
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="450dp"
+        android:text="Cancel"
+        app:layout_constraintTop_toBottomOf="@id/btnlogin"
+        app:layout_constraintStart_toStartOf="@id/btnlogin"
+        app:layout_constraintEnd_toEndOf="@id/btnlogin"
+        android:layout_marginTop="50dp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
